@@ -13,8 +13,8 @@ variable "key_file" {
 }
 
 ##### Common VM specifications ######
-variable "datacenter" { default = "dal10" }
-variable "domain" { default = "icp.demo" }
+variable "datacenter" { default = "syd01" }
+variable "domain" { default = "example.com" }
 
 ##### ICP version #####
 variable "icp_version" { default = "ibmcom/icp-inception:2.1.0" }
