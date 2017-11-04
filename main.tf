@@ -14,8 +14,8 @@ resource "softlayer_virtual_guest" "icpmaster" {
     domain      = "${var.domain}"
     hostname    = "${format("${lower(var.instance_name)}-master%01d", count.index + 1) }"
 
-    os_reference_code = "UBUNTU_16_64"
-
+    #os_reference_code = "UBUNTU_16_64"
+    image_id          = "${var.image_id}"
     cores       = "${var.master["cpu_cores"]}"
     memory      = "${var.master["memory"]}"
     disks       = ["${var.master["disk_size"]}"]
@@ -24,7 +24,7 @@ resource "softlayer_virtual_guest" "icpmaster" {
     hourly_billing        = "${var.master["hourly_billing"]}"
     private_network_only  = "${var.master["private_network_only"]}"
 
-    user_metadata = "{\"value\":\"newvalue\"}"
+    #user_metadata = "{\"value\":\"newvalue\"}"
 
     ssh_key_ids = ["${data.softlayer_ssh_key.public_key.id}"]
 }
