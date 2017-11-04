@@ -29,6 +29,7 @@ resource "softlayer_virtual_guest" "icpmaster" {
     ssh_key_ids = ["${data.softlayer_ssh_key.public_key.id}"]
 }
 
+/*
 resource "softlayer_virtual_guest" "icpworker" {
     count       = "${var.worker["nodes"]}"
 
@@ -108,3 +109,4 @@ module "icpprovision" {
     ssh_key   = "${var.key_file}"
 
 }
+*/
