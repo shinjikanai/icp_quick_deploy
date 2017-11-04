@@ -17,10 +17,10 @@ variable "datacenter" { default = "dal10" }
 variable "domain" { default = "icp.demo" }
 
 ##### ICP version #####
-variable "icp_version" { default = "ibmcom/icp-inception:2.1.0-beta-3" }
+variable "icp_version" { default = "ibmcom/icp-inception:2.1.0" }
 
 # Name of the ICP installation, will be used as basename for VMs
-variable "instance_name" { default = "myicp" }
+variable "instance_name" { default = "master" }
 
 ##### ICP Instance details ######
 variable "master" {
