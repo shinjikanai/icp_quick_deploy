@@ -1,6 +1,7 @@
 ##### SoftLayer Access Credentials ######
 variable "sl_username" { default = "" }
 variable "sl_api_key" { default = "" }
+variable "bxapikey" { default = "" }
 
 variable "key_name" {
   description = "Name or reference of SSH key to provision softlayer instances with"
