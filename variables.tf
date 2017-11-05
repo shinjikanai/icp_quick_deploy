@@ -41,5 +41,6 @@ variable "master" {
 
 variable "image_id" {
   #image id = 1781531
-  description = { default = "1781531"}
+  description = "Open template image and check url to see id"
+  default = "1781531"
 }
