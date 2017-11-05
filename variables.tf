@@ -3,6 +3,7 @@ variable "sl_username" { default = "" }
 variable "sl_api_key" { default = "" }
 variable "bxapikey" { default = "" }
 
+/*
 variable "key_name" {
   description = "Name or reference of SSH key to provision softlayer instances with"
   default = "icp-key"
@@ -12,6 +13,7 @@ variable "key_file" {
   description = "Path to private key on for above public key"
   default = "/home/username/id_rsa"
 }
+*/                              
 
 ##### Common VM specifications ######
 variable "datacenter" { default = "syd01" }
