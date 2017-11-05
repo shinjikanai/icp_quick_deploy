@@ -31,7 +31,7 @@ resource "softlayer_virtual_guest" "icpmaster" {
 
     #user_metadata = "{\"value\":\"newvalue\"}"
 
-    ssh_key_ids = ["${data.softlayer_ssh_key.public_key.id}"]
+    #ssh_key_ids = ["${data.softlayer_ssh_key.public_key.id}"]
 }
 
 
