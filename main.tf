@@ -7,6 +7,10 @@ data "softlayer_ssh_key" "public_key" {
   label = "${var.key_name}"
 }
 
+data "ibm_compute_image_template" "img_tpl" {
+    name = "ICP21_installer(allinone)"
+}
+
 resource "softlayer_virtual_guest" "icpmaster" {
     count       = "${var.master["nodes"]}"
 
