@@ -28,9 +28,9 @@ variable "master" {
   default = {
     nodes       = "1"
     cpu_cores   = "2"
-    disk_size   = "25" // GB
+    disk_size   = "100" // GB
     local_disk  = false
-    memory      = "8192"
+    memory      = "16384"
     network_speed= "1000"
     private_network_only=false
     hourly_billing=true
