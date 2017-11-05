@@ -39,7 +39,7 @@ variable "master" {
 
 }
 
-variable image_id {
+variable "image_id" {
   #image id = 1781531
   description = { default = "1781531"}
 }
