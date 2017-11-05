@@ -37,3 +37,10 @@ variable "master" {
   }
 
 }
+data "ibm_compute_image_template" "img_tpl" {
+    name = "ICP21_installer(allinone)"
+}
+variable image_id {
+  #image id = 1781531
+  description = "${data.ibm_compute_image_template.img_tpl.id}"
+}
