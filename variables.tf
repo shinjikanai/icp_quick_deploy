@@ -34,6 +34,7 @@ variable "master" {
     network_speed= "1000"
     private_network_only=false
     hourly_billing=true
+    public_vlan_id = 945
   }
 
 }
