@@ -40,5 +40,5 @@ variable "master" {
 
 variable image_id {
   #image id = 1781531
-  description = "${data.ibm_compute_image_template.img_tpl.id}"
+  description = { default = "1781531"}
 }
