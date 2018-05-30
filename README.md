@@ -74,4 +74,4 @@ This is only temporary to your current terminal session. To make this permanent,
 ## License
 MIT; see [LICENSE](LICENSE) for details.
 
-## contributor: Shinji
+## contributor: Shinjif
